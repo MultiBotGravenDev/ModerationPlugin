@@ -1,0 +1,4 @@
+{
+  "main": "fr.gravendev.ModerationPlugin",
+  "depends": ["database_plugin"]
+}

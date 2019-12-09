@@ -1,0 +1,22 @@
+plugins {
+    id 'com.github.johnrengelman.shadow' version '5.2.0'
+    id 'java'
+}
+
+group 'fr.gravendev'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    jcenter()
+    maven { url "https://jitpack.io" }
+}
+
+shadowJar {
+    baseName = 'ModerationPlugin'
+}
+
+dependencies {
+    compile project(path: ':DatabasePlugin')
+    implementation 'com.github.NeutronStars:NBot:b_3.0.4'
+}
